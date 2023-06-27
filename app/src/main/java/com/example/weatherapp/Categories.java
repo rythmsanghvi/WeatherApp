@@ -6,6 +6,7 @@ import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -76,17 +77,16 @@ public class Categories extends AppCompatActivity {
                 int imageResource = getResources().getIdentifier(image, "drawable", getPackageName());
                 imageView.setImageResource(imageResource);
                 textView.setText(text);
+                Button button = cardView.findViewById(R.id.text_view);
 
-                cardView.setOnClickListener(new View.OnClickListener() {
+                button.setOnClickListener(new View.OnClickListener() {
                     @Override
-                    public void onClick(View view) {
-                        // Launch the blog activity and pass the appropriate blog content data
-                        Intent intent = new Intent(getApplicationContext(), BlogActivity.class);
-                        intent.putExtra("title", text);
-                        intent.putExtra("content", getBlogContent(text)); // Get the blog content based on the category
-                        startActivity(intent);
+                    public void onClick(View v) {
+                        // Handle button click
+                        openBlogActivity(text);
                     }
                 });
+
 
                 // Add the card view to the container
                 cardContainer.addView(cardView);
@@ -95,45 +95,77 @@ public class Categories extends AppCompatActivity {
     }
 
 
+    private void openBlogActivity(String category) {
+        // Read the blog content from blog_contents.xml based on the category
+        String category_case = category;
+        String blogContent = readBlogContent(category_case.toLowerCase());
+
+        // Create an Intent to open the BlogActivity
+        Intent intent = new Intent(this, BlogActivity.class);
+
+        // Pass the category and content as extras to the intent
+        intent.putExtra("title", category);
+        intent.putExtra("content", blogContent);
+
+        // Start the BlogActivity
+        startActivity(intent);
+    }
 
 
-private String getBlogContent(String category) {
-        // Read the blog content from the raw file based on the category
-        int resourceId = getResources().getIdentifier("blog_content", "raw", getPackageName());
-        InputStream inputStream = getResources().openRawResource(resourceId);
+    private String readBlogContent(String category) {
+        StringBuilder blogContent = new StringBuilder();
 
-        // Read the content from the input stream and find the matching content for the category
-        StringBuilder contentBuilder = new StringBuilder();
         try {
-        BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
-        String line;
-        while ((line = reader.readLine()) != null) {
-        String[] parts = line.split(",");
-        if (parts.length == 2) {
-        String categoryName = parts[0].trim();
-        String blogContent = parts[1].trim();
+            // Read the file input stream
+            Resources resources = getResources();
+            InputStream inputStream = resources.openRawResource(R.raw.blog_content);
+            BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
 
-        if (categoryName.equalsIgnoreCase(category)) {
-        contentBuilder.append(blogContent);
-        contentBuilder.append("\n");
-        }
-        }
-        }
+            // Read each line and find the matching category
+            String line;
+            boolean isCategoryStarted = false;
+            while ((line = reader.readLine()) != null) {
+                line = line.trim(); // Trim leading and trailing spaces
+
+                if (line.contains("<category name=\"" + category + "\">")) {
+                    isCategoryStarted = true;
+                    // Extract the blog content from the starting line
+                    int start = line.indexOf(">") + 1;
+                    blogContent.append(line.substring(start)).append("\n");
+                } else if (isCategoryStarted) {
+                    // Append the current line as part of the blog content
+                    if (line.contains("</category>")) {
+                        // Stop appending lines once closing tag is encountered
+                        int end = line.indexOf("</category>");
+                        blogContent.append(line.substring(0, end));
+                        break;
+                    } else {
+                        blogContent.append(line).append("\n");
+                    }
+                }
+            }
+
+            // Close the reader and input stream
+            reader.close();
+            inputStream.close();
         } catch (IOException e) {
-        e.printStackTrace();
-        } finally {
-        try {
-        inputStream.close();
-        } catch (IOException e) {
-        e.printStackTrace();
-        }
+            e.printStackTrace();
         }
 
-        return contentBuilder.toString();
-        }
+        return blogContent.toString();
+    }
 
 
-private List<String> readCardData() {
+
+
+
+
+
+
+
+
+
+    private List<String> readCardData() {
         List<String> cardDataList = new ArrayList<>();
 
         try {
@@ -146,7 +178,6 @@ private List<String> readCardData() {
             String line;
             while ((line = reader.readLine()) != null) {
                 cardDataList.add(line);
-                System.out.println(line);
             }
 
             // Close the reader and input stream

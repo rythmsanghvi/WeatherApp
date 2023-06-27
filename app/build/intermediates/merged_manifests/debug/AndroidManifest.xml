@@ -57,6 +57,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.example.weatherapp.BlogActivity"
+            android:label="Blog Activity" >
+        </activity>
 
         <provider
             android:name="com.squareup.picasso.PicassoProvider"

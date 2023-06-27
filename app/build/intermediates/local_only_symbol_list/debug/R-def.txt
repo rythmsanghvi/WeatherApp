@@ -78,6 +78,7 @@ menu bottom_navigation_menu
 mipmap ic_launcher
 mipmap ic_launcher_foreground
 mipmap ic_launcher_round
+raw blog_content
 raw cards_data
 string app_name
 style Base.Theme.WeatherApp
