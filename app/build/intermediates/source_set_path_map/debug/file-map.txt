@@ -39,10 +39,10 @@ com.example.weatherapp-appcompat-1.6.1-37 C:\Users\sangh\.gradle\caches\transfor
 com.example.weatherapp-lifecycle-viewmodel-ktx-2.5.1-38 C:\Users\sangh\.gradle\caches\transforms-3\f81133833ec4a27de62c695049942651\transformed\lifecycle-viewmodel-ktx-2.5.1\res
 com.example.weatherapp-activity-1.6.0-39 C:\Users\sangh\.gradle\caches\transforms-3\f90ea4a9753d88de4b0a42a7435534cc\transformed\activity-1.6.0\res
 com.example.weatherapp-navigation-ui-2.4.0-40 C:\Users\sangh\.gradle\caches\transforms-3\fd3beddeda1c990c5d9fd3702f3191f6\transformed\navigation-ui-2.4.0\res
-com.example.weatherapp-pngs-41 C:\Users\sangh\Downloads\Disaster_App-master\Disaster_App-master\app\build\generated\res\pngs\debug
-com.example.weatherapp-resValues-42 C:\Users\sangh\Downloads\Disaster_App-master\Disaster_App-master\app\build\generated\res\resValues\debug
-com.example.weatherapp-packageDebugResources-43 C:\Users\sangh\Downloads\Disaster_App-master\Disaster_App-master\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
-com.example.weatherapp-packageDebugResources-44 C:\Users\sangh\Downloads\Disaster_App-master\Disaster_App-master\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
-com.example.weatherapp-merged_res-45 C:\Users\sangh\Downloads\Disaster_App-master\Disaster_App-master\app\build\intermediates\merged_res\debug
-com.example.weatherapp-debug-46 C:\Users\sangh\Downloads\Disaster_App-master\Disaster_App-master\app\src\debug\res
-com.example.weatherapp-main-47 C:\Users\sangh\Downloads\Disaster_App-master\Disaster_App-master\app\src\main\res
+com.example.weatherapp-pngs-41 C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\build\generated\res\pngs\debug
+com.example.weatherapp-resValues-42 C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\build\generated\res\resValues\debug
+com.example.weatherapp-packageDebugResources-43 C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.example.weatherapp-packageDebugResources-44 C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.example.weatherapp-merged_res-45 C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\build\intermediates\merged_res\debug
+com.example.weatherapp-debug-46 C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\src\debug\res
+com.example.weatherapp-main-47 C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\src\main\res

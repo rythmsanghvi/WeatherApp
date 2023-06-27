@@ -1,5 +1,9 @@
 <cards>
-    cyclone, Card 1
-   cyclone, Card 2
-    cyclone, Card 3
+    cyclone, Cyclone
+    earthquake, Earthquake
+    flood, Flood
+    landslide, Landslide
+    sandstorm, Sandstorm
+    tsunami, Tsunami
+    volcano, Volcano
 </cards>

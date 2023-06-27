@@ -2489,6 +2489,7 @@ int drawable baseline_cloud_24 0x7f080059
 int drawable baseline_home_24 0x7f08005a
 int drawable baseline_refresh_24 0x7f08005b
 int drawable baseline_search_24 0x7f08005c
+int drawable blizzard 0x7f0800ab
 int drawable btn_checkbox_checked_mtrl 0x7f08005d
 int drawable btn_checkbox_checked_to_unchecked_mtrl_animation 0x7f08005e
 int drawable btn_checkbox_unchecked_mtrl 0x7f08005f
@@ -2505,8 +2506,11 @@ int drawable design_ic_visibility 0x7f080069
 int drawable design_ic_visibility_off 0x7f08006a
 int drawable design_password_eye 0x7f08006b
 int drawable design_snackbar_background 0x7f08006c
+int drawable earthquake 0x7f0800ac
 int drawable favcard 0x7f08006d
 int drawable favoritecard 0x7f08006e
+int drawable flood 0x7f0800ad
+int drawable hurricane 0x7f0800ae
 int drawable ic_clock_black_24dp 0x7f08006f
 int drawable ic_keyboard_black_24dp 0x7f080070
 int drawable ic_launcher_background 0x7f080071
@@ -2518,6 +2522,7 @@ int drawable ic_mtrl_checked_circle 0x7f080076
 int drawable ic_mtrl_chip_checked_black 0x7f080077
 int drawable ic_mtrl_chip_checked_circle 0x7f080078
 int drawable ic_mtrl_chip_close_circle 0x7f080079
+int drawable landslide 0x7f0800af
 int drawable m3_appbar_background 0x7f08007a
 int drawable m3_popupmenu_background_overlay 0x7f08007b
 int drawable m3_radiobutton_ripple 0x7f08007c
@@ -2560,14 +2565,19 @@ int drawable notification_template_icon_bg 0x7f0800a0
 int drawable notification_template_icon_low_bg 0x7f0800a1
 int drawable notification_tile_bg 0x7f0800a2
 int drawable notify_panel_notification_icon_bg 0x7f0800a3
+int drawable placeholder 0x7f0800b3
+int drawable sandstorm 0x7f0800b0
 int drawable selector 0x7f0800a4
 int drawable square_button_background 0x7f0800a5
 int drawable test_custom_background 0x7f0800a6
 int drawable test_level_drawable 0x7f0800a7
 int drawable tooltip_frame_dark 0x7f0800a8
 int drawable tooltip_frame_light 0x7f0800a9
+int drawable tsunami 0x7f0800b1
+int drawable volcano 0x7f0800b2
 int drawable weatherforecast 0x7f0800aa
 int font montserrat_bold 0x7f090000
+int font roboto 0x7f090001
 int id ALT 0x7f0a0000
 int id BOTTOM_END 0x7f0a0001
 int id BOTTOM_START 0x7f0a0002
@@ -2704,6 +2714,7 @@ int id constraint 0x7f0a0084
 int id container 0x7f0a0085
 int id content 0x7f0a0086
 int id contentPanel 0x7f0a0087
+int id content_text_view 0x7f0a0203
 int id contiguous 0x7f0a0088
 int id continuousVelocity 0x7f0a0089
 int id coordinator 0x7f0a008a
@@ -3048,6 +3059,7 @@ int id time 0x7f0a01dc
 int id title 0x7f0a01dd
 int id titleDividerNoCustom 0x7f0a01de
 int id title_template 0x7f0a01df
+int id title_text_view 0x7f0a0204
 int id toggle 0x7f0a01e0
 int id top 0x7f0a01e1
 int id topPanel 0x7f0a01e2
@@ -3169,6 +3181,7 @@ int layout abc_search_dropdown_item_icons_2line 0x7f0d0018
 int layout abc_search_view 0x7f0d0019
 int layout abc_select_dialog_material 0x7f0d001a
 int layout abc_tooltip 0x7f0d001b
+int layout activity_blog 0x7f0d0078
 int layout activity_main 0x7f0d001c
 int layout bottom_navigation 0x7f0d001d
 int layout card_view 0x7f0d001e

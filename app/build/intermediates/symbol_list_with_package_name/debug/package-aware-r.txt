@@ -2490,6 +2490,7 @@ drawable baseline_cloud_24
 drawable baseline_home_24
 drawable baseline_refresh_24
 drawable baseline_search_24
+drawable blizzard
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -2506,8 +2507,11 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable earthquake
 drawable favcard
 drawable favoritecard
+drawable flood
+drawable hurricane
 drawable ic_clock_black_24dp
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
@@ -2519,6 +2523,7 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable landslide
 drawable m3_appbar_background
 drawable m3_popupmenu_background_overlay
 drawable m3_radiobutton_ripple
@@ -2561,14 +2566,19 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable placeholder
+drawable sandstorm
 drawable selector
 drawable square_button_background
 drawable test_custom_background
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable tsunami
+drawable volcano
 drawable weatherforecast
 font montserrat_bold
+font roboto
 id ALT
 id BOTTOM_END
 id BOTTOM_START
@@ -2705,6 +2715,7 @@ id constraint
 id container
 id content
 id contentPanel
+id content_text_view
 id contiguous
 id continuousVelocity
 id coordinator
@@ -3049,6 +3060,7 @@ id time
 id title
 id titleDividerNoCustom
 id title_template
+id title_text_view
 id toggle
 id top
 id topPanel
@@ -3170,6 +3182,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_blog
 layout activity_main
 layout bottom_navigation
 layout card_view

@@ -16,6 +16,7 @@
     </string-array>
     <array name="preloaded_fonts" translatable="false">
         <item>@font/montserrat_bold</item>
+        <item>@font/roboto</item>
     </array>
     <color name="black">#FF000000</color>
     <color name="black_shade">#292D36</color>

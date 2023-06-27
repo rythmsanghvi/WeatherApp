@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Disaster_App-master\app\src\main\AndroidManifest.xml:2:1-48:12
-INJECTED from C:\Users\sangh\Downloads\Disaster_App-master\Disaster_App-master\app\src\main\AndroidManifest.xml:2:1-48:12
-INJECTED from C:\Users\sangh\Downloads\Disaster_App-master\Disaster_App-master\app\src\main\AndroidManifest.xml:2:1-48:12
-INJECTED from C:\Users\sangh\Downloads\Disaster_App-master\Disaster_App-master\app\src\main\AndroidManifest.xml:2:1-48:12
+ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\src\main\AndroidManifest.xml:2:1-48:12
 MERGED from [androidx.databinding:databinding-adapters:8.0.2] C:\Users\sangh\.gradle\caches\transforms-3\d07fe2da60611f9883f2940ace995de4\transformed\databinding-adapters-8.0.2\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.databinding:databinding-runtime:8.0.2] C:\Users\sangh\.gradle\caches\transforms-3\55e30cecc3eb0fc571054a9e11c47df7\transformed\databinding-runtime-8.0.2\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.navigation:navigation-ui-ktx:2.4.0] C:\Users\sangh\.gradle\caches\transforms-3\ee4a51690138b536e5a43fee505b6556\transformed\navigation-ui-ktx-2.4.0\AndroidManifest.xml:17:1-24:12
@@ -67,47 +67,47 @@ MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\User
 MERGED from [androidx.print:print:1.0.0] C:\Users\sangh\.gradle\caches\transforms-3\89d7c0a63c4c68190d59f33c4abce116\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\sangh\.gradle\caches\transforms-3\4f735b77350aefc156737b8f9bd0fa95\transformed\annotation-experimental-1.3.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:exifinterface:27.1.0] C:\Users\sangh\.gradle\caches\transforms-3\c91448ad0c5bd5c2c5ff2bce480734ae\transformed\exifinterface-27.1.0\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Users\sangh\Downloads\Disaster_App-master\Disaster_App-master\app\src\main\AndroidManifest.xml:2:1-48:12
-INJECTED from C:\Users\sangh\Downloads\Disaster_App-master\Disaster_App-master\app\src\main\AndroidManifest.xml:2:1-48:12
-INJECTED from C:\Users\sangh\Downloads\Disaster_App-master\Disaster_App-master\app\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\src\main\AndroidManifest.xml:2:1-48:12
 	package
-		INJECTED from C:\Users\sangh\Downloads\Disaster_App-master\Disaster_App-master\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Disaster_App-master\app\src\main\AndroidManifest.xml:2:1-48:12
-		INJECTED from C:\Users\sangh\Downloads\Disaster_App-master\Disaster_App-master\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\src\main\AndroidManifest.xml:2:1-48:12
+		INJECTED from C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\sangh\Downloads\Disaster_App-master\Disaster_App-master\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Disaster_App-master\app\src\main\AndroidManifest.xml:2:1-48:12
-		INJECTED from C:\Users\sangh\Downloads\Disaster_App-master\Disaster_App-master\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\src\main\AndroidManifest.xml:2:1-48:12
+		INJECTED from C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\src\main\AndroidManifest.xml
 	xmlns:tools
-		ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Disaster_App-master\app\src\main\AndroidManifest.xml:3:5-51
+		ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
-		INJECTED from C:\Users\sangh\Downloads\Disaster_App-master\Disaster_App-master\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Disaster_App-master\app\src\main\AndroidManifest.xml:2:1-48:12
-		INJECTED from C:\Users\sangh\Downloads\Disaster_App-master\Disaster_App-master\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\src\main\AndroidManifest.xml:2:1-48:12
+		INJECTED from C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Disaster_App-master\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Disaster_App-master\app\src\main\AndroidManifest.xml:5:5-66
+ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\src\main\AndroidManifest.xml:5:5-66
 	android:name
-		ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Disaster_App-master\app\src\main\AndroidManifest.xml:5:22-64
+		ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\src\main\AndroidManifest.xml:5:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Disaster_App-master\app\src\main\AndroidManifest.xml:6:5-78
+ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\src\main\AndroidManifest.xml:6:5-78
 	android:name
-		ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Disaster_App-master\app\src\main\AndroidManifest.xml:6:22-76
+		ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\src\main\AndroidManifest.xml:6:22-76
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Disaster_App-master\app\src\main\AndroidManifest.xml:7:5-80
+ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\src\main\AndroidManifest.xml:7:5-80
 	android:name
-		ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Disaster_App-master\app\src\main\AndroidManifest.xml:7:22-78
+		ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\src\main\AndroidManifest.xml:7:22-78
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Disaster_App-master\app\src\main\AndroidManifest.xml:8:5-78
+ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\src\main\AndroidManifest.xml:8:5-78
 	android:name
-		ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Disaster_App-master\app\src\main\AndroidManifest.xml:8:22-76
+		ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\src\main\AndroidManifest.xml:8:22-76
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Disaster_App-master\app\src\main\AndroidManifest.xml:9:5-80
+ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\src\main\AndroidManifest.xml:9:5-80
 	android:name
-		ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Disaster_App-master\app\src\main\AndroidManifest.xml:9:22-77
+		ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\src\main\AndroidManifest.xml:9:22-77
 application
-ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Disaster_App-master\app\src\main\AndroidManifest.xml:12:5-46:19
+ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\src\main\AndroidManifest.xml:12:5-46:19
 MERGED from [com.google.android.material:material:1.5.0] C:\Users\sangh\.gradle\caches\transforms-3\a965dbd46dad388efad08cc8f6d01086\transformed\material-1.5.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.5.0] C:\Users\sangh\.gradle\caches\transforms-3\a965dbd46dad388efad08cc8f6d01086\transformed\material-1.5.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\sangh\.gradle\caches\transforms-3\30f4c334bb9586b8299d31214a27cc88\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -131,59 +131,59 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\sangh\.gradle\cach
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.9.0] C:\Users\sangh\.gradle\caches\transforms-3\55dedc70b95a473650eda30d4efd0f99\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Disaster_App-master\app\src\main\AndroidManifest.xml:19:9-35
+		ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\src\main\AndroidManifest.xml:19:9-35
 	android:label
-		ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Disaster_App-master\app\src\main\AndroidManifest.xml:17:9-41
+		ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\src\main\AndroidManifest.xml:17:9-41
 	android:fullBackupContent
-		ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Disaster_App-master\app\src\main\AndroidManifest.xml:15:9-54
+		ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\src\main\AndroidManifest.xml:15:9-54
 	android:roundIcon
-		ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Disaster_App-master\app\src\main\AndroidManifest.xml:18:9-54
+		ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\src\main\AndroidManifest.xml:18:9-54
 	tools:targetApi
-		ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Disaster_App-master\app\src\main\AndroidManifest.xml:21:9-29
+		ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\src\main\AndroidManifest.xml:21:9-29
 	android:icon
-		ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Disaster_App-master\app\src\main\AndroidManifest.xml:16:9-43
+		ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\src\main\AndroidManifest.xml:16:9-43
 	android:allowBackup
-		ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Disaster_App-master\app\src\main\AndroidManifest.xml:13:9-35
+		ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\src\main\AndroidManifest.xml:13:9-35
 	android:theme
-		ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Disaster_App-master\app\src\main\AndroidManifest.xml:20:9-48
+		ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\src\main\AndroidManifest.xml:20:9-48
 	android:dataExtractionRules
-		ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Disaster_App-master\app\src\main\AndroidManifest.xml:14:9-65
+		ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\src\main\AndroidManifest.xml:14:9-65
 meta-data#preloaded_fonts
-ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Disaster_App-master\app\src\main\AndroidManifest.xml:23:9-25:57
+ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\src\main\AndroidManifest.xml:23:9-25:57
 	android:resource
-		ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Disaster_App-master\app\src\main\AndroidManifest.xml:25:13-54
+		ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\src\main\AndroidManifest.xml:25:13-54
 	android:name
-		ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Disaster_App-master\app\src\main\AndroidManifest.xml:24:13-43
+		ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\src\main\AndroidManifest.xml:24:13-43
 activity#com.example.weatherapp.MainActivity
-ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Disaster_App-master\app\src\main\AndroidManifest.xml:26:9-35:20
+ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\src\main\AndroidManifest.xml:26:9-35:20
 	android:windowSoftInputMode
-		ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Disaster_App-master\app\src\main\AndroidManifest.xml:29:13-52
+		ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\src\main\AndroidManifest.xml:29:13-52
 	android:exported
-		ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Disaster_App-master\app\src\main\AndroidManifest.xml:28:13-36
+		ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\src\main\AndroidManifest.xml:28:13-36
 	android:name
-		ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Disaster_App-master\app\src\main\AndroidManifest.xml:27:13-41
+		ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\src\main\AndroidManifest.xml:27:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Disaster_App-master\app\src\main\AndroidManifest.xml:30:13-34:29
+ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\src\main\AndroidManifest.xml:30:13-34:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Disaster_App-master\app\src\main\AndroidManifest.xml:31:17-69
+ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\src\main\AndroidManifest.xml:31:17-69
 	android:name
-		ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Disaster_App-master\app\src\main\AndroidManifest.xml:31:25-66
+		ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\src\main\AndroidManifest.xml:31:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Disaster_App-master\app\src\main\AndroidManifest.xml:33:17-77
+ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\src\main\AndroidManifest.xml:33:17-77
 	android:name
-		ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Disaster_App-master\app\src\main\AndroidManifest.xml:33:27-74
+		ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\src\main\AndroidManifest.xml:33:27-74
 activity#com.example.weatherapp.Categories
-ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Disaster_App-master\app\src\main\AndroidManifest.xml:36:9-45:20
+ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\src\main\AndroidManifest.xml:36:9-45:20
 	android:label
-		ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Disaster_App-master\app\src\main\AndroidManifest.xml:38:13-48
+		ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\src\main\AndroidManifest.xml:38:13-48
 	android:exported
-		ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Disaster_App-master\app\src\main\AndroidManifest.xml:39:13-36
+		ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\src\main\AndroidManifest.xml:39:13-36
 	android:name
-		ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Disaster_App-master\app\src\main\AndroidManifest.xml:37:13-39
+		ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\src\main\AndroidManifest.xml:37:13-39
 uses-sdk
-INJECTED from C:\Users\sangh\Downloads\Disaster_App-master\Disaster_App-master\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\sangh\Downloads\Disaster_App-master\Disaster_App-master\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\sangh\Downloads\Disaster_App-master\Disaster_App-master\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\src\main\AndroidManifest.xml
 MERGED from [androidx.databinding:databinding-adapters:8.0.2] C:\Users\sangh\.gradle\caches\transforms-3\d07fe2da60611f9883f2940ace995de4\transformed\databinding-adapters-8.0.2\AndroidManifest.xml:5:5-44
 MERGED from [androidx.databinding:databinding-adapters:8.0.2] C:\Users\sangh\.gradle\caches\transforms-3\d07fe2da60611f9883f2940ace995de4\transformed\databinding-adapters-8.0.2\AndroidManifest.xml:5:5-44
 MERGED from [androidx.databinding:databinding-runtime:8.0.2] C:\Users\sangh\.gradle\caches\transforms-3\55e30cecc3eb0fc571054a9e11c47df7\transformed\databinding-runtime-8.0.2\AndroidManifest.xml:5:5-44
@@ -310,16 +310,16 @@ MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\sangh\.
 MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\sangh\.gradle\caches\transforms-3\4f735b77350aefc156737b8f9bd0fa95\transformed\annotation-experimental-1.3.0\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:exifinterface:27.1.0] C:\Users\sangh\.gradle\caches\transforms-3\c91448ad0c5bd5c2c5ff2bce480734ae\transformed\exifinterface-27.1.0\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:exifinterface:27.1.0] C:\Users\sangh\.gradle\caches\transforms-3\c91448ad0c5bd5c2c5ff2bce480734ae\transformed\exifinterface-27.1.0\AndroidManifest.xml:20:5-44
-INJECTED from C:\Users\sangh\Downloads\Disaster_App-master\Disaster_App-master\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\sangh\Downloads\Disaster_App-master\Disaster_App-master\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from C:\Users\sangh\Downloads\Disaster_App-master\Disaster_App-master\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Disaster_App-master\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\sangh\Downloads\Disaster_App-master\Disaster_App-master\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\sangh\Downloads\Disaster_App-master\Disaster_App-master\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Disaster_App-master\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\sangh\Downloads\Disaster_App-master\Disaster_App-master\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\src\main\AndroidManifest.xml
 provider#com.squareup.picasso.PicassoProvider
 ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\sangh\.gradle\caches\transforms-3\53fd372bc6075963930fdb3bf9d901d9\transformed\picasso-2.71828\AndroidManifest.xml:8:9-11:40
 	android:authorities

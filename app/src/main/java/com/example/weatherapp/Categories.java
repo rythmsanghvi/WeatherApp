@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -15,6 +16,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
@@ -27,7 +29,7 @@ public class Categories extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.categories);
 
-        BottomNavigationView bottomNavigationView=findViewById(R.id.bottom_navigation);
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
 
         // Set Home selected
         bottomNavigationView.setSelectedItemId(R.id.menu_categories);
@@ -75,13 +77,63 @@ public class Categories extends AppCompatActivity {
                 imageView.setImageResource(imageResource);
                 textView.setText(text);
 
+                cardView.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        // Launch the blog activity and pass the appropriate blog content data
+                        Intent intent = new Intent(getApplicationContext(), BlogActivity.class);
+                        intent.putExtra("title", text);
+                        intent.putExtra("content", getBlogContent(text)); // Get the blog content based on the category
+                        startActivity(intent);
+                    }
+                });
+
                 // Add the card view to the container
                 cardContainer.addView(cardView);
             }
         }
     }
 
-    private List<String> readCardData() {
+
+
+
+private String getBlogContent(String category) {
+        // Read the blog content from the raw file based on the category
+        int resourceId = getResources().getIdentifier("blog_content", "raw", getPackageName());
+        InputStream inputStream = getResources().openRawResource(resourceId);
+
+        // Read the content from the input stream and find the matching content for the category
+        StringBuilder contentBuilder = new StringBuilder();
+        try {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
+        String line;
+        while ((line = reader.readLine()) != null) {
+        String[] parts = line.split(",");
+        if (parts.length == 2) {
+        String categoryName = parts[0].trim();
+        String blogContent = parts[1].trim();
+
+        if (categoryName.equalsIgnoreCase(category)) {
+        contentBuilder.append(blogContent);
+        contentBuilder.append("\n");
+        }
+        }
+        }
+        } catch (IOException e) {
+        e.printStackTrace();
+        } finally {
+        try {
+        inputStream.close();
+        } catch (IOException e) {
+        e.printStackTrace();
+        }
+        }
+
+        return contentBuilder.toString();
+        }
+
+
+private List<String> readCardData() {
         List<String> cardDataList = new ArrayList<>();
 
         try {
