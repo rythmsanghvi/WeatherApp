@@ -50,7 +50,7 @@
         <activity
             android:name="com.example.weatherapp.Categories"
             android:exported="true"
-            android:label="Categories Activity" >
+            android:label="Categories" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

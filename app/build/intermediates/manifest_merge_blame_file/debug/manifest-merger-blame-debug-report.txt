@@ -92,8 +92,8 @@
 51-->C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\src\main\AndroidManifest.xml:37:13-39
 52            android:exported="true"
 52-->C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\src\main\AndroidManifest.xml:39:13-36
-53            android:label="Categories Activity" >
-53-->C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\src\main\AndroidManifest.xml:38:13-48
+53            android:label="Categories" >
+53-->C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\src\main\AndroidManifest.xml:38:13-39
 54            <intent-filter>
 54-->C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\src\main\AndroidManifest.xml:30:13-34:29
 55                <action android:name="android.intent.action.MAIN" />

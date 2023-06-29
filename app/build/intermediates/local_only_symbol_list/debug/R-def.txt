@@ -42,6 +42,7 @@ drawable weatherforecast
 font montserrat_bold
 font roboto
 id RLHome
+id action_bar_title
 id bottom_navigation
 id card_container
 id card_view
@@ -78,6 +79,7 @@ id textWindSpeed
 id text_view
 id title
 id title_text_view
+layout action_bar_custom
 layout activity_blog
 layout activity_helpline
 layout activity_main

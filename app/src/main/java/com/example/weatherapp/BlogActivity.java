@@ -19,6 +19,8 @@ public class BlogActivity extends AppCompatActivity {
         String title = intent.getStringExtra("title");
         String content = intent.getStringExtra("content");
 
+        setTitle(title);
+
         // Find the TextViews in the blog activity layout
         ImageView imageView = findViewById(R.id.image_view);
         TextView titleTextView = findViewById(R.id.title_text_view);

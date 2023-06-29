@@ -23,7 +23,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="375dp"
+            android:layout_height="350dp"
             android:background="@drawable/day"
             android:orientation="vertical">
 

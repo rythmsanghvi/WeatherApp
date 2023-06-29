@@ -175,7 +175,7 @@ ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\src\main
 activity#com.example.weatherapp.Categories
 ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\src\main\AndroidManifest.xml:36:9-45:20
 	android:label
-		ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\src\main\AndroidManifest.xml:38:13-48
+		ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\src\main\AndroidManifest.xml:38:13-39
 	android:exported
 		ADDED from C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\src\main\AndroidManifest.xml:39:13-36
 	android:name

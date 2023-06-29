@@ -28,7 +28,7 @@
     <color name="white">#FFFFFFFF</color>
     <dimen name="card_margin">10dp</dimen>
     <string name="app_name">Disaster App</string>
-    <style name="Base.Theme.WeatherApp" parent="Theme.AppCompat.DayNight.DarkActionBar">
+    <style name="Base.Theme.WeatherApp" parent="Theme.AppCompat.Light">
         
         
     </style>

@@ -35,7 +35,7 @@
         </activity>
         <activity
             android:name=".Categories"
-            android:label="Categories Activity"
+            android:label="Categories"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
