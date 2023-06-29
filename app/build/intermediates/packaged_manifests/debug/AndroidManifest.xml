@@ -58,6 +58,16 @@
             </intent-filter>
         </activity>
         <activity
+            android:name="com.example.weatherapp.HelplineActivity"
+            android:exported="true"
+            android:label="Helpline Activity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.helpline.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name="com.example.weatherapp.BlogActivity"
             android:label="Blog Activity" >
         </activity>

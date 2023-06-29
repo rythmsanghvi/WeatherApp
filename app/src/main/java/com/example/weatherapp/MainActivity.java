@@ -80,24 +80,16 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
         // Set Home selected
         bottomNavigationView.setSelectedItemId(R.id.menu_home);
 
-        // Perform item selected listener
-        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                int itemId = item.getItemId();
-
-                if (itemId == R.id.menu_home) {
-                    return true;
-                } else if (itemId == R.id.menu_categories) {
-                    startActivity(new Intent(getApplicationContext(), Categories.class));
-                    overridePendingTransition(0, 0);
-                    return true;
+        bottomNavigationView.setOnNavigationItemSelectedListener(
+                new BottomNavigationView.OnNavigationItemSelectedListener() {
+                    @Override
+                    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                        int itemId = item.getItemId();
+                        NavigationManager.navigate(MainActivity.this, itemId);
+                        return true;
+                    }
                 }
-
-                return false;
-            }
-
-        });
+        );
 //        getWindow().setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
 
         progressBar = findViewById(R.id.pBarLoading);

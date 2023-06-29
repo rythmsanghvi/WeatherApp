@@ -1,0 +1,8 @@
+<helplines>
+    <helpline title="Emergency" number="911" />
+    <helpline title="Police" number="100" />
+    <helpline title="Fire Department" number="101" />
+    <helpline title="Hospital" number="108"/>
+    <helpline title="Ambulance" number="108"/>
+    <!-- Add more helpline entries as needed -->
+</helplines>

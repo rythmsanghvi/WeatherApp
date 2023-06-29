@@ -20,11 +20,15 @@
     </array>
     <color name="black">#FF000000</color>
     <color name="black_shade">#292D36</color>
-    <color name="ic_launcher_background">#5CCAF6</color>
+    <color name="dark_blue">#005065</color>
+    <color name="ic_launcher_background">#FFFFFF</color>
+    <color name="light_gray">#B5B7B8</color>
+    <color name="light_teal">#03FFE4</color>
     <color name="teal">#008080</color>
     <color name="white">#FFFFFFFF</color>
-    <string name="app_name">WeatherApp</string>
-    <style name="Base.Theme.WeatherApp" parent="Theme.AppCompat.Light.NoActionBar">
+    <dimen name="card_margin">10dp</dimen>
+    <string name="app_name">Disaster App</string>
+    <style name="Base.Theme.WeatherApp" parent="Theme.AppCompat.DayNight.DarkActionBar">
         
         
     </style>

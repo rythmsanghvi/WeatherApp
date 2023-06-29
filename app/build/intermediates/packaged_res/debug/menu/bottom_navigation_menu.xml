@@ -9,4 +9,8 @@
         android:id="@+id/menu_categories"
         android:title="Categories"
         android:icon="@drawable/baseline_auto_awesome_mosaic_24"/>
+    <item
+        android:id="@+id/menu_helpline"
+        android:title="Helpline"
+        android:icon="@drawable/baseline_local_phone_24"/>
 </menu>

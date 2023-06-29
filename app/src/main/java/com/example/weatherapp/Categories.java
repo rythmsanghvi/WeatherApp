@@ -36,23 +36,16 @@ public class Categories extends AppCompatActivity {
         bottomNavigationView.setSelectedItemId(R.id.menu_categories);
 
         // Perform item selected listener
-        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                int itemId = item.getItemId();
-
-                if (itemId == R.id.menu_categories) {
-                    return true;
-                } else if (itemId == R.id.menu_home) {
-                    startActivity(new Intent(getApplicationContext(), MainActivity.class));
-                    overridePendingTransition(0, 0);
-                    return true;
+        bottomNavigationView.setOnNavigationItemSelectedListener(
+                new BottomNavigationView.OnNavigationItemSelectedListener() {
+                    @Override
+                    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                        int itemId = item.getItemId();
+                        NavigationManager.navigate(Categories.this, itemId);
+                        return true;
+                    }
                 }
-
-                return false;
-            }
-
-        });
+        );
         LinearLayout cardContainer = findViewById(R.id.card_container);
 
         // Read the card data from the file
@@ -154,15 +147,6 @@ public class Categories extends AppCompatActivity {
 
         return blogContent.toString();
     }
-
-
-
-
-
-
-
-
-
 
 
     private List<String> readCardData() {
