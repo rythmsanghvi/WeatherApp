@@ -13,6 +13,7 @@ color light_teal
 color teal
 color white
 dimen card_margin
+dimen cardview_margin
 drawable baseline_auto_awesome_mosaic_24
 drawable baseline_cloud_24
 drawable baseline_home_24

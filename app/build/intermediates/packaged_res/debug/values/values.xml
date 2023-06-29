@@ -27,6 +27,7 @@
     <color name="teal">#008080</color>
     <color name="white">#FFFFFFFF</color>
     <dimen name="card_margin">10dp</dimen>
+    <dimen name="cardview_margin">5dp</dimen>
     <string name="app_name">Disaster App</string>
     <style name="Base.Theme.WeatherApp" parent="Theme.AppCompat.Light">
         

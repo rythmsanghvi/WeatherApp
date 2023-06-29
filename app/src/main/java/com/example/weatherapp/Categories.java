@@ -47,6 +47,7 @@ public class Categories extends AppCompatActivity {
                 }
         );
         LinearLayout cardContainer = findViewById(R.id.card_container);
+        int cardMarginPx = getResources().getDimensionPixelSize(R.dimen.cardview_margin);
 
         // Read the card data from the file
         List<String> cardDataList = readCardData();
@@ -71,6 +72,12 @@ public class Categories extends AppCompatActivity {
                 imageView.setImageResource(imageResource);
                 textView.setText(text);
                 Button button = cardView.findViewById(R.id.text_view);
+                LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(
+                        LinearLayout.LayoutParams.MATCH_PARENT,
+                        LinearLayout.LayoutParams.WRAP_CONTENT
+                );
+                layoutParams.setMargins(cardMarginPx, cardMarginPx, cardMarginPx, cardMarginPx);
+                cardView.setLayoutParams(layoutParams);
 
                 button.setOnClickListener(new View.OnClickListener() {
                     @Override

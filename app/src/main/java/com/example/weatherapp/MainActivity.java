@@ -39,6 +39,7 @@ import com.squareup.picasso.Picasso;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+import java.time.Duration;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
@@ -186,7 +187,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
                     if (response.getString("cod").equals("404")) {
                         Toast.makeText(MainActivity.this, "Please enter correct city name", Toast.LENGTH_LONG).show();
                     } else {
-                        textLastTime.setText(getCurrentTime());
+                        textLastTime.setText(getTimePassedSinceLastUpdate());
                         lon = response.getJSONObject("coord").getDouble("lon");
                         lat = response.getJSONObject("coord").getDouble("lat");
                         getCurrentWeather(lat, lon);
@@ -211,6 +212,31 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
 
         return dateTime.format(formatter);
+    }
+    private String getTimePassedSinceLastUpdate() {
+        SharedPreferences sharedPreferences = getSharedPreferences("WeatherData", Context.MODE_PRIVATE);
+        String lastUpdateTime = sharedPreferences.getString("Time", "");
+        String currentTime = getCurrentTime();
+        LocalDateTime lastUpdateDateTime = LocalDateTime.parse(lastUpdateTime, DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
+        LocalDateTime currentDateTime = LocalDateTime.now();
+
+        Duration duration = Duration.between(lastUpdateDateTime, currentDateTime);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putString("Time", currentTime);
+        editor.apply();
+
+        long secondsPassed = duration.getSeconds();
+        long minutesPassed = secondsPassed / 60;
+        long hoursPassed = minutesPassed / 60;
+
+        if (hoursPassed > 0) {
+            return hoursPassed + " hours ago";
+        } else if (minutesPassed > 0) {
+            return minutesPassed + " minutes ago";
+        } else {
+            return secondsPassed + " seconds ago";
+        }
+
     }
 
     @Override
@@ -240,7 +266,6 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, urlCurrent, null, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
-                textLastTime.setText(getCurrentTime());
                 saveLastResponse(response, 0);
                 progressBar.setVisibility(View.GONE);
                 rLHome.setVisibility(View.VISIBLE);
@@ -276,6 +301,8 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
             double wSpeed = response.getJSONObject("wind")
                     .getDouble("speed");
             textWindSpeed.setText("" + wSpeed + "Km/h");
+
+            textLastTime.setText(getTimePassedSinceLastUpdate());
         } catch (Exception e) {
             Log.d("Update Res", e.getMessage());
         }
@@ -295,10 +322,12 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, urlForecast, null, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
-                textLastTime.setText(getCurrentTime());
                 saveLastResponse(response, 1);
                 arr.clear();
                 updateForecastWeather(response);
+
+                // Update last update time
+                textLastTime.setText(getTimePassedSinceLastUpdate());
             }
         }, new Response.ErrorListener() {
             @Override
@@ -367,7 +396,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
         try {
             String save = res.toString();
             editor.putString(saveKey[time], save);
-            editor.putString("Time", getCurrentTime());
+            editor.putString("Time_" + time, getCurrentTime());
             editor.apply();
         } catch (Exception e) {
             Log.d("Save Res", e.getMessage());
@@ -385,7 +414,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
     private void retrieveLastResponse(int time) {
         SharedPreferences sharedPreferences = getSharedPreferences("WeatherData", Context.MODE_PRIVATE);
         String weatherData = sharedPreferences.getString(saveKey[time], "");
-        String dateTime = sharedPreferences.getString("Time", "");
+        String dateTime = sharedPreferences.getString("Time_" + time, "");
         textLastTime.setText(dateTime);
         try {
             JSONObject response = new JSONObject(weatherData);

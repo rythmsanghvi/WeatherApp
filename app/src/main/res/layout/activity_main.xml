@@ -19,13 +19,17 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:visibility="visible">
+        android:visibility="visible"
+
+        >
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="350dp"
+            android:layout_height="375dp"
             android:background="@drawable/day"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:paddingHorizontal="10dp"
+            android:paddingTop="15dp">
 
             <TextView
                 android:id="@+id/textCityName"
@@ -60,7 +64,7 @@
                     android:layout_weight="4"
                     android:background="@android:color/transparent"
                     android:hint="Enter City Name"
-                    android:padding="5dp"
+                    android:padding="4dp"
                     android:textColorHint="@color/white"
                     android:textSize="20sp">
 
@@ -82,7 +86,7 @@
                     android:layout_width="53dp"
                     android:layout_height="49dp"
                     android:layout_gravity="center"
-                    android:layout_margin="5dp"
+                    android:layout_margin="4dp"
                     android:layout_weight="1"
                     android:background="@android:color/transparent"
                     android:src="@drawable/baseline_search_24"
@@ -97,7 +101,7 @@
                 android:layout_height="79dp"
                 android:layout_below="@+id/llEdit"
                 android:gravity="center_horizontal"
-                android:padding="2dp"
+                android:padding="1dp"
                 android:text="23"
                 android:textColor="@color/white"
                 android:textSize="65sp" />
@@ -231,7 +235,7 @@
                 android:layout_weight="2"
                 android:background="#40FFFFFF"
                 android:orientation="horizontal"
-                android:padding="0dp"
+                android:paddingTop="10dp"
                 android:visibility="visible"
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager">
 

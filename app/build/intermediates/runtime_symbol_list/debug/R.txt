@@ -1909,6 +1909,7 @@ int dimen card_margin 0x7f070053
 int dimen cardview_compat_inset_shadow 0x7f070054
 int dimen cardview_default_elevation 0x7f070055
 int dimen cardview_default_radius 0x7f070056
+int dimen cardview_margin 0x7f070249
 int dimen clock_face_margin_start 0x7f070057
 int dimen compat_button_inset_horizontal_material 0x7f070058
 int dimen compat_button_inset_vertical_material 0x7f070059
