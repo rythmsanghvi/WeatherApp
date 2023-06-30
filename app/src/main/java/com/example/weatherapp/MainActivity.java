@@ -1,6 +1,7 @@
 package com.example.weatherapp;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.recyclerview.widget.RecyclerView;
@@ -34,11 +35,14 @@ import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.textfield.TextInputEditText;
+import com.squareup.picasso.Callback;
 import com.squareup.picasso.Picasso;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.time.Duration;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -75,8 +79,13 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getSupportActionBar().hide();
+
         setContentView(R.layout.activity_main);
+        getSupportActionBar();
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null) {
+            actionBar.hide();
+        }
         // Initialize and assign variable
         BottomNavigationView bottomNavigationView=findViewById(R.id.bottom_navigation);
 
@@ -217,7 +226,14 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
         SharedPreferences sharedPreferences = getSharedPreferences("WeatherData", Context.MODE_PRIVATE);
         String lastUpdateTime = sharedPreferences.getString("Time", "");
         String currentTime = getCurrentTime();
-        LocalDateTime lastUpdateDateTime = LocalDateTime.parse(lastUpdateTime, DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
+        LocalDateTime lastUpdateDateTime;
+
+        if (lastUpdateTime.isEmpty()) {
+            lastUpdateDateTime = LocalDateTime.parse(currentTime, DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
+        } else {
+            lastUpdateDateTime = LocalDateTime.parse(lastUpdateTime, DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
+        }
+
         LocalDateTime currentDateTime = LocalDateTime.now();
 
         Duration duration = Duration.between(lastUpdateDateTime, currentDateTime);
@@ -236,8 +252,8 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
         } else {
             return secondsPassed + " seconds ago";
         }
-
     }
+
 
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
@@ -282,6 +298,9 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
 
     private void updateCurrentWeather(JSONObject response) {
         try {
+            String jsonobjecy = response.toString();
+            System.out.println(jsonobjecy);
+
             String city = response.getString("name");
             textCityName.setText(city);
 
@@ -291,7 +310,26 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
             String img = response.getJSONArray("weather")
                     .getJSONObject(0)
                     .getString("icon");
-            Picasso.get().load("https://openweathermap.org/img/w/" + img + ".png").into(imgWeather);
+
+            String imageUrl = "https://openweathermap.org/img/w/";
+            HttpURLConnection con = (HttpURLConnection) (new URL(imageUrl + img + ".png")).openConnection();
+            imageUrl+=img + ".png";
+            String finalImageUrl = imageUrl;
+            Picasso.get().load(imageUrl).fit().centerCrop()
+                    .placeholder(R.drawable.baseline_cloud_24)
+                    .error(R.drawable.baseline_cloud_24).into(imgWeather, new Callback() {
+                @Override
+                public void onSuccess() {
+                    Log.d("Image", "Image loaded successfully");
+                    // Do any additional processing or UI updates related to the successful image loading here
+                }
+
+                @Override
+                public void onError(Exception e) {
+                    Log.d("Image", "Failed to load image: " + e.getMessage() + finalImageUrl);
+                    // Handle the error if the image fails to load
+                }
+            });
 
             String condition = response.getJSONArray("weather")
                     .getJSONObject(0)
@@ -306,8 +344,8 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
         } catch (Exception e) {
             Log.d("Update Res", e.getMessage());
         }
-
     }
+
 
     private void getForecastWeather(double lat, double lon) {
         RequestQueue requestQueue = Volley.newRequestQueue(MainActivity.this);

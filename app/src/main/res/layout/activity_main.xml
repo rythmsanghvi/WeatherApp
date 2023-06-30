@@ -25,7 +25,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="375dp"
+            android:layout_height="370dp"
             android:background="@drawable/day"
             android:orientation="vertical"
             android:paddingHorizontal="10dp"
@@ -97,22 +97,22 @@
 
             <TextView
                 android:id="@+id/textTemp"
-                android:layout_width="407dp"
-                android:layout_height="79dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_below="@+id/llEdit"
                 android:gravity="center_horizontal"
                 android:padding="1dp"
-                android:text="23"
+                android:text="Loading.."
+                android:textAlignment="center"
                 android:textColor="@color/white"
-                android:textSize="65sp" />
+                android:textSize="50sp" />
 
             <ImageView
                 android:id="@+id/imgWeather"
-                android:layout_width="100dp"
+                android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:layout_below="@id/textTemp"
-                android:layout_centerHorizontal="true"
-                android:layout_gravity="center_horizontal"
+
                 android:src="@drawable/baseline_cloud_24" />
 
             <TextView

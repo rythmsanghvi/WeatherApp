@@ -10147,7 +10147,7 @@
     </string-array></file><file path="C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\src\main\res\values\ic_launcher_background.xml" qualifiers=""><color name="ic_launcher_background">#FFFFFF</color></file><file path="C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\src\main\res\values\preloaded_fonts.xml" qualifiers=""><array name="preloaded_fonts" translatable="false">
         <item>@font/montserrat_bold</item>
         <item>@font/roboto</item>
-    </array></file><file path="C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\src\main\res\values\strings.xml" qualifiers=""><string name="app_name">Disaster App</string></file><file path="C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\src\main\res\values\themes.xml" qualifiers=""><style name="Base.Theme.WeatherApp" parent="Theme.AppCompat.Light">
+    </array></file><file path="C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\src\main\res\values\strings.xml" qualifiers=""><string name="app_name">Disaster App</string></file><file path="C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\src\main\res\values\themes.xml" qualifiers=""><style name="Base.Theme.WeatherApp" parent="Theme.AppCompat.Light.NoActionBar">
         
         
     </style><style name="Theme.WeatherApp" parent="Base.Theme.WeatherApp"/></file><file path="C:\Users\sangh\Downloads\Disaster_App-master\Weather-App\app\src\main\res\values-night\themes.xml" qualifiers="night-v8"><style name="Base.Theme.WeatherApp" parent="Theme.Material3.DayNight.NoActionBar">

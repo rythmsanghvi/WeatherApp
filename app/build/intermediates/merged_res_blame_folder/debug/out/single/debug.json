@@ -184,20 +184,20 @@
         "source": "C:\\Users\\sangh\\.gradle\\daemon\\8.0\\com.example.weatherapp-main-47:\\mipmap-xxxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\sangh\\.gradle\\daemon\\8.0\\com.example.weatherapp-merged_res-45:\\layout_categories.xml.flat",
-        "source": "C:\\Users\\sangh\\.gradle\\daemon\\8.0\\com.example.weatherapp-main-47:\\layout\\categories.xml"
-    },
-    {
         "merged": "C:\\Users\\sangh\\.gradle\\daemon\\8.0\\com.example.weatherapp-merged_res-45:\\mipmap-xxhdpi_ic_launcher_foreground.png.flat",
         "source": "C:\\Users\\sangh\\.gradle\\daemon\\8.0\\com.example.weatherapp-main-47:\\mipmap-xxhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\sangh\\.gradle\\daemon\\8.0\\com.example.weatherapp-merged_res-45:\\layout_categories.xml.flat",
+        "source": "C:\\Users\\sangh\\.gradle\\daemon\\8.0\\com.example.weatherapp-main-47:\\layout\\categories.xml"
     },
     {
         "merged": "C:\\Users\\sangh\\.gradle\\daemon\\8.0\\com.example.weatherapp-merged_res-45:\\drawable_placeholder.png.flat",
         "source": "C:\\Users\\sangh\\.gradle\\daemon\\8.0\\com.example.weatherapp-main-47:\\drawable\\placeholder.png"
     },
     {
-        "merged": "com.example.weatherapp-merged_res-45:/raw_blog_content.xml.flat",
-        "source": "com.example.weatherapp-main-47:/raw/blog_content.xml"
+        "merged": "com.example.weatherapp-merged_res-45:/layout_activity_main.xml.flat",
+        "source": "com.example.weatherapp-main-47:/layout/activity_main.xml"
     },
     {
         "merged": "C:\\Users\\sangh\\.gradle\\daemon\\8.0\\com.example.weatherapp-merged_res-45:\\mipmap-xxhdpi_ic_launcher.png.flat",

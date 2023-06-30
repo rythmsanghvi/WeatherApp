@@ -30,9 +30,9 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
         android:testOnly="true"
-        android:theme="@style/Theme.WeatherApp" >
+        android:theme="@style/Base.Theme.WeatherApp"
+        android:usesCleartextTraffic="true" >
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
@@ -40,6 +40,7 @@
         <activity
             android:name="com.example.weatherapp.MainActivity"
             android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:windowSoftInputMode="adjustPan" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -49,27 +50,18 @@
         </activity>
         <activity
             android:name="com.example.weatherapp.Categories"
-            android:exported="true"
-            android:label="Categories" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            android:label="Categories"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
         </activity>
         <activity
             android:name="com.example.weatherapp.HelplineActivity"
-            android:exported="true"
-            android:label="Helpline Activity" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.helpline.LAUNCHER" />
-            </intent-filter>
+            android:label="Helpline Activity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
         </activity>
         <activity
             android:name="com.example.weatherapp.BlogActivity"
-            android:label="Blog Activity" >
+            android:label="Blog Activity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
         </activity>
 
         <provider
